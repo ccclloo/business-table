@@ -283,7 +283,7 @@ export const getMigratedOptions = async (panel: PanelModel<OutdatedPanelOptions>
         };
       }
 
-      if (panel.pluginVersion && semver.lt(panel.pluginVersion, '1.7.0') && !!normalizedGroup.update.datasource) {
+      if (panel.pluginVersion && semver.lt(panel.pluginVersion, '1.7.1') && !!normalizedGroup.update.datasource) {
         normalizedGroup.update = {
           ...normalizedGroup.update,
           datasource: normalizeDatasourceOptions(dataSources, normalizedGroup.update.datasource),
@@ -330,7 +330,7 @@ export const getMigratedOptions = async (panel: PanelModel<OutdatedPanelOptions>
     options.nestedObjects = [];
   }
 
-  if (panel.pluginVersion && semver.lt(panel.pluginVersion, '1.7.0') && !!options.nestedObjects.length) {
+  if (panel.pluginVersion && semver.lt(panel.pluginVersion, '1.7.1') && !!options.nestedObjects.length) {
     const nestedObjectsUpdated = options.nestedObjects.map((nestedObject) => {
       const object = { ...nestedObject };
       if (nestedObject.add && nestedObject.add?.request.datasource) {

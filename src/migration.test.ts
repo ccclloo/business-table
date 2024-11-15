@@ -228,7 +228,7 @@ describe('migration', () => {
   /**
    * Normalize Datasource Option
    */
-  describe('1.7.0', () => {
+  describe('1.7.1', () => {
     it('Should normalize datasource option from name to id ', async () => {
       expect(
         await getMigratedOptions({
