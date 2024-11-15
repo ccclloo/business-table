@@ -69,7 +69,7 @@ export const useExportData = <TData>({
        * CSV text
        */
       const content = toCSV([dataFrame], {
-        useExcelHeader: false,
+        useExcelHeader: true,
       });
 
       /**
