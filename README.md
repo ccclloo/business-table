@@ -27,7 +27,7 @@ For the latter, please use the following command:
 ```bash
 grafana-cli plugins install volkovlabs-table-panel
 ```
-
+test
 ## Highlights
 
 - Tree View with expandable and collapsible elements.
